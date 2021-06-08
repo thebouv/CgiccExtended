@@ -1,0 +1,38 @@
+2003-08-15 Anthony Bouvier  <anthony@bodhihouse.com>
+  * Updated project file, directory and other build files to reflect correct
+    spelling of the project.  Yep, that's all.  :)
+
+2003-08-05 Anthony Bouvier  <anthony@bodhihouse.com>
+
+  * CgiccExtended.cc : overloaded operator[] for quick access to param values
+    * just like param(std::string) actually, just you now have a choice
+      * really just a neat feature, though probably not needed since param
+        is just as easy to use, and operator overloading is often unecessary
+        -- well, its here just in case someone WANTS to access the data
+        this way.  I just thought I'd give it a try to test operator overloading
+    * idea, though not implementation, borrowed from MizCGI
+      * http://www2.swau.edu/~jasonm/mizcgi/
+
+2003-07-30 Anthony Bouvier  <anthony@bodhihouse.com>
+
+  * CgiccExtended.cc : added cookieDump() for debugging purposes
+
+2003-07-29 Anthony Bouvier  <anthony@bodhihouse.com>
+
+  * CgiccExtended.cc : make header() use cgicc::HTTPContentHeader class
+    * so CgiccExtended.hh includes cgicc/HTTPContentHeader.h
+  * CgiccExtended.cc : make redirect() use cgicc::HTTPRedirectHeader class
+    * so CgiccExtended.hh includes cgicc/HTTPRedirectHeader.h
+  * CgiccExtended.cc : dump() now takes delimiter and endline parameters
+    * defaults are provided in CgiccExtended.hh
+
+2003-07-25 Anthony Bouvier  <anthony@bodhihouse.com>
+
+	* CgiccExtended.cc : created setCookie(string,string)
+    * using Cgicc's HTTPCookie class
+	* CgiccExtended.cc : created setCookie(map<string,string> &)  
+    * using Cgicc's HTTPCookie class
+
+2003-07-16 Anthony Bouvier  <anthony@bodhihouse.com>
+
+	* all files : initial design and release

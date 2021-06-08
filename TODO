@@ -1,0 +1,4 @@
+A lot that I haven't even thought about yet.  But at least the following:
+
+* change header() to use Cgicc's HTTPHeader class(es). ->  COMPLETED 2003-07-29
+* provide escape and unescape methods for character encoding.
